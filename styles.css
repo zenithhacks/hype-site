@@ -15,6 +15,10 @@
 	flex-direction: row;
 }
 
+.form-element {
+	margin-right: 1rem;
+}
+
 .negative {
 	color: white;
 	-webkit-text-fill-color: black;
@@ -59,4 +63,32 @@ a:visited:active,
 a:link,
 a:visited {
 	color: inherit;
+}
+
+@media screen and (max-width: 600px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.title {
+		font-size: 64px;
+		font-weight: 900;
+	}
+
+	body {
+		padding: 1rem;
+	}
+
+	.form-container {
+		display: block;
+	}
+
+	.form-element {
+		margin-right: 0rem;
+		width: 90%;
+		margin-top: 1rem;
+	}
 }
